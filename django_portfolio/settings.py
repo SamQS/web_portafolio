@@ -88,8 +88,8 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-database_url = os.environ.get("DATABASE_URL")
-DATABASES["default"] = dj_database_url.parse(database_url)
+DATABASES["default"] = dj_database_url.parse("postgres://django_web_portfolio_bd_user:Hj7VWaZF0ahjiiQsfpjEWD2Kx7zSvkTH@dpg-cmndnula73kc73cj4lhg-a.oregon-postgres.render.com/django_web_portfolio_bd"
+)
 #postgres://django_web_portfolio_bd_user:Hj7VWaZF0ahjiiQsfpjEWD2Kx7zSvkTH@dpg-cmndnula73kc73cj4lhg-a.oregon-postgres.render.com/django_web_portfolio_bd
 
 # Password validation
