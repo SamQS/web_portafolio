@@ -84,7 +84,8 @@ WSGI_APPLICATION = 'django_portfolio.wsgi.application'
 
 DATABASES = {
     'default': dj_database_url.config(
-        default='sqlite://PATH',
+        default='postgresql://postgres:postgres@localhost:5432/mysite',
+        conn_max_age=600
         )
         
         #'ENGINE': 'django.db.backends.sqlite3',
